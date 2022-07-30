@@ -67,7 +67,7 @@ function App(){
         ) : ('')}
         <br />
         <div className="code">
-          <a className='source-code' href='https://dylananderton.github.io/Weather-Finder/' target='_blank'>
+          <a className='source-code' href='https://github.com/dylananderton/Weather-Finder/tree/main' target='_blank'>
             <span className='source-code-text'>See the source code</span>
           </a>
         </div>
