@@ -2,10 +2,15 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  overflow: hidden;
 }
 
 body {
   font-family: 'Montserrat', sans-serif;
+}
+
+::placeholder{
+  color: #313131;
 }
 
 .app {
@@ -13,6 +18,9 @@ body {
   background-size: cover;
   background-position: bottom;
   transition: 0.4 ease;
+  position: relative;
+  align-items: center;
+  justify-content: center;
 }
 
 .app.warm {
@@ -22,13 +30,14 @@ body {
 main {
   min-height: 100vh;
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.75));
-  padding: 25px;
+  padding: 25px 0 10px;
   text-align: center;
   justify-content: center;
+  position: relative;
 }
 
 .search-box {
-  margin: 0 0 75px;
+  margin: 0 0 50px;
   padding-top: 4%;
   display: flex;
   text-align: center;
@@ -52,8 +61,14 @@ main {
   margin: auto;
 }
 
-@media(max-width:900px){
+@media(max-width:580px){
+  .search-box{
+    margin: 0 0 40px;
+    padding-top: 2%;
+  }
+}
 
+@media(max-width:900px){
   .search-box{
     padding-top: 10%;
   }
@@ -130,4 +145,21 @@ main {
   font-size: 48px;
   font-weight: 700;
   text-shadow: 3px 3px rgba(50, 50, 70, 0.5);
+}
+
+.code {
+  position:fixed;
+  bottom:0;
+  left:0;
+  transform: translate(calc(50vw - 50%));
+  margin-bottom: 5px;
+}
+
+.source-code {
+  color: rgb(233, 233, 233);
+  display: inline-block;
+}
+
+.source-code:hover{
+  text-decoration: none;
 }

@@ -65,6 +65,12 @@ function App(){
           </div>
         </div>
         ) : ('')}
+        <br />
+        <div className="code">
+          <a className='source-code' href='https://dylananderton.github.io/Weather-Finder/' target='_blank'>
+            <span className='source-code-text'>See the source code</span>
+          </a>
+        </div>
       </main>
     </div>
   );
